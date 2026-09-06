@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aranha-Verso Hub · Figuras e Simbiontes do Homem-Aranha</title>
+  <meta name="description" content="Um tributo interativo ao multiverso do Homem-Aranha: conheça as versões do Aranha-Verso e os simbiontes, cada um com seu próprio dossiê em quadrinhos." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%95%B7%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <svg class="corner-web corner-web--tl" id="web-tl" viewBox="0 0 200 200" aria-hidden="true"></svg>
+  <svg class="corner-web corner-web--tr" id="web-tr" viewBox="0 0 200 200" aria-hidden="true"></svg>
+
+  <nav>
+    <span class="nav-logo">ARANHA-VERSO</span>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#aranha-verso">Aranha-Verso</a></li>
+      <li><a href="#simbiontes">Simbiontes</a></li>
+      <li><a href="#cultura">Cultura Pop</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">☰</button>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Um tributo ao multiverso</p>
+      <h1 class="hero-title">Todo mundo pode<br />vestir a máscara.</h1>
+      <p class="hero-sub">Do Peter Parker original ao Homem-Aranha 2099, passando pelos simbiontes que já tentaram usar o manto contra ele — um dossiê interativo de cada versão que já balançou entre os prédios.</p>
+    </div>
+    <div class="hero-scroll"><span></span>role</div>
+  </section>
+
+  <div class="sfx-banner">
+    <div class="sfx-track" id="sfx-track"></div>
+  </div>
+
+  <section id="cultura">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Cultura Pop</p>
+        <h2 class="section-title">Aranha-Verso nas Telas</h2>
+        <p>Do cinema aos consoles, o multiverso aracnídeo virou um dos maiores fenômenos culturais da Marvel.</p>
+      </div>
+      <div class="media-grid" id="media-grid"></div>
+    </div>
+  </section>
+
+  <section id="aranha-verso">
+    <div class="halftone on-dark"></div>
+    <img class="spider-emblem" src="img/spider-emblem.webp" alt="" aria-hidden="true" loading="lazy" width="1920" height="1080" />
+    <div class="wrap">
+      <div class="section-head on-dark reveal">
+        <p class="eyebrow" style="color: var(--gold)">Figuras do Aranha-Verso</p>
+        <h2 class="section-title">Escolha sua Terra</h2>
+        <p>Clique em qualquer figura pra abrir o dossiê completo — origem, poderes e a versão da Terra que ela protege.</p>
+      </div>
+      <div class="fig-grid" id="fig-grid"></div>
+    </div>
+  </section>
+
+  <section id="simbiontes">
+    <div class="wrap">
+      <div class="section-head on-dark reveal">
+        <p class="eyebrow">Venom e os Simbiontes</p>
+        <h2 class="section-title">O Outro Lado da Teia</h2>
+        <p>Nem toda ameaça ao Aranha-Verso vem de outra Terra — algumas vêm de dentro do próprio traje.</p>
+      </div>
+      <div class="symb-grid" id="symb-grid"></div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="halftone"></div>
+    <div class="wrap" style="position: relative; z-index: 1;">
+      <h2>Qual Aranha é você?</h2>
+      <p>Explore cada dossiê, descubra os poderes de cada Terra e decida qual versão do mito mais combina com você.</p>
+      <a href="#aranha-verso" class="btn">Ver todas as figuras</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-links">
+        <a href="#hero">Início</a>
+        <a href="#aranha-verso">Aranha-Verso</a>
+        <a href="#simbiontes">Simbiontes</a>
+        <a href="#cultura">Cultura Pop</a>
+      </div>
+      <p>Projeto tributo de fã, sem fins comerciais · Homem-Aranha e todos os personagens são marcas registradas da Marvel.</p>
+      <p class="credit">Refatorado e desenvolvido por <a href="https://kaua-hiro.github.io/portifolio-hiro/" target="_blank" rel="noopener noreferrer">Kauã Hiro Mizumoto</a></p>
+    </div>
+  </footer>
+
+  <div class="dossier-overlay" id="dossier-overlay">
+    <div class="dossier" id="dossier" role="dialog" aria-modal="true">
+      <button class="dossier-close" id="dossier-close" aria-label="Fechar">✕</button>
+      <div class="dossier-head">
+        <div class="halftone on-dark"></div>
+        <div class="dossier-portrait"><img id="d-img" src="" alt="" /></div>
+        <div class="dossier-headtext">
+          <p class="dossier-issue" id="d-issue"></p>
+          <h3 class="dossier-name" id="d-name"></h3>
+          <p class="dossier-alias" id="d-alias"></p>
+          <span class="dossier-earth" id="d-earth"></span>
+        </div>
+      </div>
+      <div class="dossier-body">
+        <p class="caption-box" id="d-text"></p>
+        <div class="dossier-powers">
+          <h4>Poderes e Habilidades</h4>
+          <ul id="d-powers"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
